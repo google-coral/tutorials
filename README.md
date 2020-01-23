@@ -7,6 +7,12 @@ Colab.
 
 To view a tutorial in Colab, use the following links:
 
++ [Retrain a classification model for Edge TPU](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb)
+
+  Build an image classification model, train it with a flowers dataset, and
+  convert it into the TensorFlow Lite format that's compatible with the
+  Edge TPU.
+
 + [Run Colab on a Coral Dev Board](https://colab.research.google.com/github/google-coral/tutorials/blob/master/run_colab_on_devboard.ipynb)
 
   Learn how to run a Jupyter notebook on your Dev Board *from* Google Colab
