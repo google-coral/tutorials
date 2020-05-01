@@ -7,10 +7,13 @@ Colab.
 
 To view a tutorial in Colab, use the following links:
 
-+ [Retrain a classification model for Edge TPU](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb)
++ [Retrain a classification model for Edge TPU (with TF 2.0)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb)
 
   Build an image classification model, train it with a flowers dataset, quantize
   it with post-training quantization, and then compile it for the Edge TPU.
+
+  We have another [version of the tutorial using TF 1.0](
+  https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb)
 
 + [Run Colab on a Coral Dev Board](https://colab.research.google.com/github/google-coral/tutorials/blob/master/run_colab_on_devboard.ipynb)
 
