@@ -1,24 +1,39 @@
 # Colab tutorials for Coral
 
-This repo contains Jupyter notebook files that offer interactive tutorials for
-development with Coral devices. You can read these files in GitHub's
-rendered view, but they're meant to be interactive when viewed through Google
-Colab.
+These Jupyter notebooks provide interactive Python tutorials for
+development with Coral. You can download these files and run them on a
+local Jupyter notebook, but they're designed for execution with Google
+Colab, using the links below.
 
-To view a tutorial in Colab, use the following links:
+Train and build a model for the Edge TPU:
 
-+ [Retrain a classification model for Edge TPU (with TF 2.0)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb)
++ [Retrain a classification model using post-training quantization (with TF2)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb)
 
-  Build an image classification model, train it with a flowers dataset, quantize
-  it with post-training quantization, and then compile it for the Edge TPU.
+  This shows how to build an image classification model with Keras, train it
+  with a custom dataset, quantize it with post-training quantization, and then
+  compile it for the Edge TPU.
 
-  We have another [version of the tutorial using TF 1.0](
-  https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb)
+  We have another [version of this tutorial using TF1](
+  https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb).
+
++ [Retrain a classification model using quant-aware training (with TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_qat_tf1.ipynb)
+
+  This shows how to retrain a quant-aware classification model using TF1. This
+  process is complex, so the notebook calls upon several Python scripts
+  to do the work (links to these scripts are provided in the notebook).
+
++ [Retrain an object model using quant-aware training (with TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_detection_qat_tf1.ipynb)
+
+  This shows how to retrain a quant-aware object detection model using TF1. This
+  process is complex, so the notebook calls upon several Python scripts
+  to do the work (links to these scripts are provided in the notebook).
+
+Other tutorials:
 
 + [Run Colab on a Coral Dev Board](https://colab.research.google.com/github/google-coral/tutorials/blob/master/run_colab_on_devboard.ipynb)
 
-  Learn how to run a Jupyter notebook on your Dev Board *from* a Google Colab
-  interface on your host computer.
+  This shows how to run a Jupyter notebook on your Dev Board *from* a Google
+  Colab interface on your host computer.
 
 + [Build all the C++ "edgetpu" examples](https://colab.research.google.com/github/google-coral/tutorials/blob/master/build_cpp_examples.ipynb)
 
