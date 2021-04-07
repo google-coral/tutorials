@@ -30,15 +30,23 @@ Train and build a model for the Edge TPU:
 
 Other tutorials:
 
++ [Web-based Edge TPU Compiler](https://colab.research.google.com/github/google-coral/tutorials/blob/master/compile_for_edgetpu.ipynb)
+
+  This Colab compiles a TensorFlow Lite model for the Edge TPU, in case you
+  don't have a system that's compatible with the
+  [Edge TPU Compiler](https://coral.ai/docs/edgetpu/compiler/)
+  (Debian Linux only).
+
 + [Run Colab on a Coral Dev Board](https://colab.research.google.com/github/google-coral/tutorials/blob/master/run_colab_on_devboard.ipynb)
 
   This shows how to run a Jupyter notebook on your Dev Board *from* a Google
   Colab interface on your host computer.
 
-+ [Build all the C++ "edgetpu" examples](https://colab.research.google.com/github/google-coral/tutorials/blob/master/build_cpp_examples.ipynb)
++ [Build the libcoral C++ examples](https://colab.research.google.com/github/google-coral/tutorials/blob/master/build_cpp_examples.ipynb)
 
-  This is a convenient way to build all the C++ inferencing examples
-  from `edgetpu/src/cpp/examples/`, and download them to your computer.
+  This is a convenient way to build all the C++ examples in
+  [github.com/google-coral/libcoral](https://github.com/google-coral/libcoral),
+  and download them to your computer.
 
 + [Build the C++ "lstpu" example](https://colab.research.google.com/github/google-coral/tutorials/blob/master/build_cpp_example_lstpu.ipynb)
 
