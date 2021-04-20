@@ -24,18 +24,18 @@
 #       --mount type=bind,src=${CLASSIFY_DIR},dst=/tensorflow/models/research/slim/transfer_learn \
 #       classify-tutorial-tf1
 
-FROM tensorflow/tensorflow:1.11.0-rc2-devel
-
-# Get the tensorflow models research directory, and move it into tensorflow
-# source folder to match recommendation of installation
-RUN git clone https://github.com/tensorflow/models.git && \
-    (cd models && git checkout f788046ca876a8820e05b0b48c1fc2e16b0955bc) && \
-    mv models /tensorflow/models
+FROM tensorflow/tensorflow:1.15.5
 
 # Install wget (to make life easier below) and editors (to allow people to edit
 # the files inside the container)
 RUN apt-get update && \
-    apt-get install -y wget vim emacs nano
+    apt-get install -y wget vim emacs nano git
+
+# Get the tensorflow models research directory
+RUN git clone https://github.com/tensorflow/tensorflow.git --depth 1
+RUN git clone https://github.com/tensorflow/models.git && \
+    (cd models && git checkout f788046ca876a8820e05b0b48c1fc2e16b0955bc) && \
+    mv models /tensorflow/models
 
 ARG work_dir=/tensorflow/models/research/slim
 

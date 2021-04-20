@@ -24,10 +24,16 @@
 #       --mount type=bind,src=${DETECT_DIR},dst=/tensorflow/models/research/learn_pet \
 #       detect-tutorial-tf1
 
-FROM tensorflow/tensorflow:1.12.0-rc2-devel
+FROM tensorflow/tensorflow:1.15.5
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && \
+    apt-get install -y python python-tk git curl unzip
 
 # Get the tensorflow models research directory, and move it into tensorflow
 # source folder to match recommendation of installation
+RUN git clone https://github.com/tensorflow/tensorflow.git --depth 1
 RUN git clone https://github.com/tensorflow/models.git && \
     (cd models && git checkout f788046ca876a8820e05b0b48c1fc2e16b0955bc) && \
     mv models /tensorflow/models
@@ -37,8 +43,6 @@ RUN git clone https://github.com/tensorflow/models.git && \
 # https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
 
 # Install object detection api dependencies
-RUN apt-get update && \
-    apt-get install -y python python-tk
 RUN pip install Cython && \
     pip install contextlib2 && \
     pip install pillow && \
