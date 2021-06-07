@@ -7,26 +7,38 @@ Colab, using the links below.
 
 Train and build a model for the Edge TPU:
 
-+ [Retrain a classification model using post-training quantization (with TF2)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb)
++ [Retrain a classification model using post-training quant (TF2)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf2.ipynb)
 
-  This shows how to build an image classification model with Keras, train it
-  with a custom dataset, quantize it with post-training quantization, and then
-  compile it for the Edge TPU.
+  This notebook builds the MobileNet V2 classification model using Keras
+  (with TF2), retrains it to classify different flowers, quantizes it with post-
+  training quantization, and then compiles it for the Edge TPU.
 
   We have another [version of this tutorial using TF1](
   https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_ptq_tf1.ipynb).
 
-+ [Retrain a classification model using quant-aware training (with TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_qat_tf1.ipynb)
++ [Retrain a classification model using quant-aware training (TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_classification_qat_tf1.ipynb)
 
-  This shows how to retrain a quant-aware classification model using TF1. This
-  process is complex, so the notebook calls upon several Python scripts
-  to do the work (links to these scripts are provided in the notebook).
+  This notebook retrains a quant-aware version of MobileNet V1 (with TF1) to
+  classify different flowers, and then compiles it for the Edge TPU.
 
-+ [Retrain an object model using quant-aware training (with TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_detection_qat_tf1.ipynb)
++ [Retrain an object detection model (MobileNet) using quant-aware training (TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_detection_qat_tf1.ipynb)
 
-  This shows how to retrain a quant-aware object detection model using TF1. This
-  process is complex, so the notebook calls upon several Python scripts
-  to do the work (links to these scripts are provided in the notebook).
+  This notebook retrains a quant-aware version of MobileNet V1 SSD (with TF1)
+  to detect cats and dogs, and then compiles it for the Edge TPU.
+
++ [Retrain an object detection model (MobileDet) using post-training quant (TF1)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_ssdlite_mobiledet_qat_tf1.ipynb)
+
+  This notebook retrains the SSDLite MobileDet model to detect cats and dogs,
+  quantizes it with post-training quantization, and then compiles it for the
+  Edge TPU.
+
++ [Retrain an object detection model (EfficientDet) using TF Lite Model Maker (TF2)](https://github.com/google-coral/tutorials/blob/master/retrain_efficientdet_model_maker_tf2.ipynb)
+
+  This notebook retrains the EfficientDet-Lite model using the TensorFlow Lite
+  Model Maker library (based on TF2) to detect different salad ingredients,
+  exports it to TF Lite (using post-training quantization), and then compiles it
+  for the Edge TPU.
+
 
 Other tutorials:
 
