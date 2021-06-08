@@ -32,7 +32,7 @@ Train and build a model for the Edge TPU:
   quantizes it with post-training quantization, and then compiles it for the
   Edge TPU.
 
-+ [Retrain an object detection model (EfficientDet) using TF Lite Model Maker (TF2)](https://github.com/google-coral/tutorials/blob/master/retrain_efficientdet_model_maker_tf2.ipynb)
++ [Retrain an object detection model (EfficientDet) using TF Lite Model Maker (TF2)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/retrain_efficientdet_model_maker_tf2.ipynb)
 
   This notebook retrains the EfficientDet-Lite model using the TensorFlow Lite
   Model Maker library (based on TF2) to detect different salad ingredients,
