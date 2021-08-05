@@ -39,6 +39,11 @@ Train and build a model for the Edge TPU:
   exports it to TF Lite (using post-training quantization), and then compiles it
   for the Edge TPU.
 
++ [Build and train an LSTM time series model (TF2)](https://colab.research.google.com/github/google-coral/tutorials/blob/master/train_lstm_timeseries_ptq_tf2.ipynb)
+
+  This notebook shows how to create an LSTM model that makes weather
+  predictions, and then quantize the model and compile it for the Edge TPU.
+
 
 Other tutorials:
 
